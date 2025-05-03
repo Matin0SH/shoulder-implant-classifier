@@ -110,22 +110,6 @@ prediction = classifier.predict(head_processed, full_processed)
 manufacturer = idx_to_manufacturer[np.argmax(prediction)]
 ```
 
-## 📁 Project Structure
-
-```
-shoulder-implant-classifier/
-├── preprocessing.py          # Image processing and detection
-├── classifier.py             # CNN model and training
-├── utils.py                  # Helper functions
-├── requirements.txt          # Project dependencies
-├── data/                     # Dataset directory
-├── models/                   # Saved model checkpoints
-├── docs/                     # Documentation and diagrams
-│   ├── system_overview.png
-│   ├── methodology_chart.png
-│   └── performance_metrics.png
-└── README.md
-```
 
 ## 🛠️ Technical Details
 
@@ -153,14 +137,10 @@ This project builds upon research in medical image analysis and deep learning:
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - Developed with guidance from Claude AI assistant
-- Dataset provided by [Medical Institution Name - if applicable]
+- Dataset provided by Maya Stark at BIDAL Lab at SFSU
 - Inspired by recent advances in medical image classification
 
 ## 📞 Contact
