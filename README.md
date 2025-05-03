@@ -2,11 +2,13 @@
 
 An AI-powered system for automatically identifying shoulder implant manufacturers from X-ray images. This project addresses the critical challenge of implant identification in revision surgeries when original implant information is unavailable.
 
-![System Overview](docs/system_overview.png)
+![System Overview](diagram_1.png)
 
 ## 🎯 Project Overview
 
 This classification system processes X-ray images to identify the manufacturer of shoulder implants across four major brands: Cofield, Depuy, Tornier, and Zimmer. The system achieves **89% overall accuracy** and **98% implant detection rate** using a novel two-stage approach.
+
+![System Architecture](diagram_2.png)
 
 ### Key Challenges Addressed
 
@@ -43,6 +45,20 @@ This classification system processes X-ray images to identify the manufacturer o
 | Cofield      | 87%       | 82%    | 84.4%    |
 | Tornier      | 83%       | 79%    | 81.0%    |
 | **Overall**  | **87.5%** | **85.0%** | **86.2%** |
+
+### Confusion Matrix
+![Confusion Matrix](ConfusionMatrix.png)
+
+### Training Performance
+![Training Metrics](loss_accuracy_precision&recall.png)
+
+## 🔬 Detection and Segmentation Results
+
+![Detection and Segmentation Samples](detection_segmentation_samples.png)
+
+## 🔮 Prediction Examples
+
+![Prediction Samples](prediction_samples.png)
 
 ## 🔧 Usage
 
@@ -94,7 +110,6 @@ full_processed = preprocess_image(full_img)
 prediction = classifier.predict(head_processed, full_processed)
 manufacturer = idx_to_manufacturer[np.argmax(prediction)]
 ```
-
 
 ## 🛠️ Technical Details
 
