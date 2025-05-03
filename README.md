@@ -44,21 +44,6 @@ This classification system processes X-ray images to identify the manufacturer o
 | Tornier      | 83%       | 79%    | 81.0%    |
 | **Overall**  | **87.5%** | **85.0%** | **86.2%** |
 
-## 💻 Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/shoulder-implant-classifier.git
-cd shoulder-implant-classifier
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
 ## 🔧 Usage
 
 ### Training the Model
